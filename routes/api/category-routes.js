@@ -5,23 +5,24 @@ const { Category, Product } = require("../../models");
 
 router.get("/", async (req, res) => {
   try {
-    const categoryData = await Category.findAll();
-    res.status(200).json(CategoryData);
+    const categories = await Category.findAll();
+    res.status(200).json(categories);
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
 router.get("/:id", async (req, res) => {
+  console.log(req);
   try {
     const categoryData = await Category.findByPk(req.params.id, {
-      include: [{ model: Product, through: Category, as: "category_product" }],
+      // include: [{ model: Product, through: Category, as: "category_product" }],
     });
-    if (!CategoryData) {
+    if (!categoryData) {
       res.status(404).json({ message: "No Location found with this id!" });
       return;
     }
-    res.status(200).json(locationData);
+    res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
   }
