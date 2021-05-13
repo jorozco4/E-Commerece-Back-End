@@ -19,6 +19,10 @@ SO THAT my company can compete with other e-commerce companies
 ![image](https://user-images.githubusercontent.com/61666288/118057226-75845480-b359-11eb-9049-657c39031a60.png)
 ![image](https://user-images.githubusercontent.com/61666288/118057250-8cc34200-b359-11eb-94e4-d2f97f2599e2.png)
 
+# Walkthrough Video
+
+https://drive.google.com/file/d/1tGjA1T-Ehqc_gZhbliWK756Dk3B6yvEM/view
+
 # Installation
 
 This app is installed using Watch, Seed, express, mysql2, and sequelize.
@@ -30,6 +34,8 @@ In order to test this application the user must open the terminal, run node serv
 # Contact Info
 
 GitHub Username: jorozco4
+
+https://jorozco4.github.io/E-Commerece-Back-End/
 
 Email: orozcojesse0@gmail.com
 
